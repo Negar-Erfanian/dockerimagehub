@@ -1,1 +1,1 @@
-## This project shows how to work with guthub action
+## This project shows how to work with CI/CD github action

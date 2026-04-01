@@ -1,10 +1,10 @@
-# Docker Image Hub – CI/CD for AI Services
+# Docker Image Hub – CI/CD for Flask App
 
-This repository demonstrates end-to-end **CI/CD workflows for AI/ML services**, including automated testing, Docker image building, and container registry deployment. It showcases practical skills in cloud-native AI deployment and modern DevOps practices.
+This repository demonstrates end-to-end **CI/CD workflows for Flask App**, including automated testing, Docker image building, and container registry deployment. It showcases practical skills in cloud-native deployment and modern DevOps practices.
 
 ## Features
 
-- **Flask-Based AI Service**: Lightweight API service for AI/ML inference.
+- **Flask-Based Service**: A very simple "Hello World" app.
 - **Automated CI/CD Pipelines**: Implemented using GitHub Actions to:
   - Run unit and integration tests
   - Build Docker images
@@ -15,10 +15,9 @@ This repository demonstrates end-to-end **CI/CD workflows for AI/ML services**, 
 ## Project Structure
 ```
 dockerimagehub/
-├── app/
-│   ├── main.py         # Flask API entry point
-│   ├── requirements.txt # Python dependencies
-│   └── utils.py        # Helper functions for AI service
+├── app.py         # Flask API entry point
+├── requirements.txt # Python dependencies
+├── test_app.py/   # Test Cases
 ├── .github/workflows/
 │   └── ci-cd.yml       # GitHub Actions workflow
 ├── Dockerfile           # Docker build configuration
@@ -30,11 +29,11 @@ dockerimagehub/
 1. **Local Development**
    - Install dependencies:
      ```bash
-     pip install -r app/requirements.txt
+     pip install -r requirements.txt
      ```
    - Run the service locally:
      ```bash
-     python app/main.py
+     python app.py
      ```
    - Test API endpoints using Postman or curl.
 
@@ -49,7 +48,7 @@ dockerimagehub/
 
 ## Skills Demonstrated
 
-- AI/ML service containerization
+- Containerization
 - Flask API development
 - CI/CD automation using GitHub Actions
 - Docker image management and registry deployment

@@ -13,7 +13,7 @@ This repository demonstrates end-to-end **CI/CD workflows for AI/ML services**, 
 - **Cloud Deployment Ready**: Designed for seamless deployment to cloud platforms (AWS, Azure, GKE).
 
 ## Project Structure
-
+```
 dockerimagehub/
 ├── app/
 │   ├── main.py         # Flask API entry point
@@ -23,6 +23,7 @@ dockerimagehub/
 │   └── ci-cd.yml       # GitHub Actions workflow
 ├── Dockerfile           # Docker build configuration
 └── README.md
+```
 
 ## How It Works
 
@@ -60,15 +61,19 @@ dockerimagehub/
    ```bash
    git clone https://github.com/Negar-Erfanian/dockerimagehub.git
    cd dockerimagehub
+   ```
    
 2. Build the Docker image:
   ```bash
   docker build -t dockerimagehub:latest .
+```
 
 3. Run the container locally:
     ```bash
     docker run -p 5000:9000 dockerimagehub:latest
+    ```
 
 4. Access the API:
 ```bash
 http://localhost:9000/predict
+```
